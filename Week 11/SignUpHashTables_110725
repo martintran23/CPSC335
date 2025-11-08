@@ -9,10 +9,10 @@ def username_checker():
             print("Stopping the Registration.")
             break
         if username in used:
-            print("Username is already taken. Choose another.")
+            print("🚫 Username is already taken. Choose another.")
         else:
             used.add(username)
-            print("Username registered successfully.")
+            print("✅ Username registered successfully.")
             
     print("\nRegistered usernames:", used)
     
