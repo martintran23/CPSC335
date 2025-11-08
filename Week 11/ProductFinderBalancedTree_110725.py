@@ -28,7 +28,7 @@ def product_catalog():
             max_price = float(input("Enter maximum price: ").strip())
             
             start = bisect.bisect_left(prices, min_price)
-            end = bisect.bisect_left(prices, max_price)
+            end = bisect.bisect_right(prices, max_price)
             
             if start >= end:
                 print("No products found in this range.")
