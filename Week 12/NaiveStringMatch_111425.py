@@ -14,3 +14,11 @@ def naive_string_match(text, pattern):
         if match:
             occurrences.append(i)
     return occurrences
+
+# Demo
+if __name__ == "__main__":
+    T = "ABABDABACDABABCABAB"
+    P = "ABABCABAB"
+
+    result = naive_string_match(T, P)
+    print("Pattern found at indices: ", result)
